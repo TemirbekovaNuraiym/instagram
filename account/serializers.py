@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from rest_framework import serializers
 
-from .tasks import send_activation_code, send_password_reset_link, create_reset_url
+from .tasks import send_activation_code
 
 
 User = get_user_model()
